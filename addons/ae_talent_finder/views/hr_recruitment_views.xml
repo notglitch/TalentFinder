@@ -33,6 +33,9 @@
                 <group>
                     <field name="lead_id"/>
                 </group>
+                <group>
+                    <field name="project_id"/>
+                </group>
                  <group>
                     <field name="selection_output" widget="radio"/>
                 </group>

@@ -12,6 +12,7 @@
         'hr_recruitment_skills',
         'hr_recruitment',
         'crm',
+        'project',
     ],
     'data': [
 	"views/hr_recruitment_views.xml",
