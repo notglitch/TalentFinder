@@ -30,11 +30,14 @@
               <sheet>
                 <separator string="Porpouse" class="mb-4"/>
                 <field name="name"/>
-                <group>
-                    <field name="lead_id"/>
+                 <group>
+                    <field name="selection_origen" widget="radio"/>
                 </group>
                 <group>
-                    <field name="project_id"/>
+                    <field name="lead_id" attrs="{'invisible': [('selection_origen', '!=', 'lead')]}"/>
+                </group>
+                <group>
+                    <field name="project_id" attrs="{'invisible': [('selection_origen', '!=', 'project')]}"/>
                 </group>
                  <group>
                     <field name="selection_output" widget="radio"/>

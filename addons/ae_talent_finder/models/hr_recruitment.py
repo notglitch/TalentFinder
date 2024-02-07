@@ -17,6 +17,11 @@ class TalentFinder(models.Model):
     ], string='Do the search for', default='applicant')
     lead_id = fields.Many2one('crm.lead', string='Lead')
     project_id = fields.Many2one('project.project', string='Project')
+    selection_origen = fields.Selection([
+        ('lead', 'Lead'),
+        ('project', 'Project'),
+        ('recruitment', 'Recruitment'),
+    ], string='Search origin', default='recruitment')
 
     @api.depends('skill_ids')
     def _compute_employees_with_skills(self):
