@@ -30,6 +30,9 @@
               <sheet>
                 <separator string="Porpouse" class="mb-4"/>
                 <field name="name"/>
+                <group>
+                    <field name="lead_id"/>
+                </group>
                  <group>
                     <field name="selection_output" widget="radio"/>
                 </group>

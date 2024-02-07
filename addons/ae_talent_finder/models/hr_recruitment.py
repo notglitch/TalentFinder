@@ -15,6 +15,8 @@ class TalentFinder(models.Model):
         ('employee', 'Employees'),
         ('applicant', 'Applicants'),
     ], string='Do the search for', default='applicant')
+    lead_id = fields.Many2one('crm.lead', string='Lead')
+
     @api.depends('skill_ids')
     def _compute_employees_with_skills(self):
         for talent_finder in self:
