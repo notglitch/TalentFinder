@@ -11,7 +11,10 @@ class TalentFinder(models.Model):
     skill_ids = fields.Many2many('hr.skill.level', store=True, string='Skills')
     employees_skill_ids = fields.Many2many('hr.employee.skill', string='Employees with Skills', compute='_compute_employees_with_skills', store=True)
     applicants_skill_ids = fields.Many2many('hr.applicant', string='Applicants with Skills', compute='_compute_applicants_with_skills', store=True)
-
+    selection_output = fields.Selection([
+        ('employee', 'Employees'),
+        ('applicant', 'Applicants'),
+    ], string='Do the search for', default='applicant')
     @api.depends('skill_ids')
     def _compute_employees_with_skills(self):
         for talent_finder in self:
