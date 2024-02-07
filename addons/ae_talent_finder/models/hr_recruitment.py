@@ -18,9 +18,6 @@ class TalentFinder(models.Model):
             employees_with_skills = self.env['hr.employee.skill'].search([('skill_id', 'in', skill_ids)])
             talent_finder.employees_skill_ids = [(6, 0, employees_with_skills.ids)]
 
-    def add_matches(self):
-        if self.skill_ids:
-            self.employees_skill_ids = self.employees_skill_idsemployees_skill_id
 
 
 
