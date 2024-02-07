@@ -10,7 +10,7 @@ class TalentFinder(models.Model):
     name = fields.Char("Porpouse", help="Declare the Purpose of the search", required=True)
     skill_ids = fields.Many2many('hr.skill.level', store=True, string='Skills')
     employees_skill_ids = fields.Many2many('hr.employee.skill', string='Employees with Skills', compute='_compute_employees_with_skills', store=True)
-    applicants_skill_ids = fields.Many2many('hr.applicant.skill', string='Applicants with Skills', compute='_compute_applicants_with_skills', store=True)
+    applicants_skill_ids = fields.Many2many('hr.applicant', string='Applicants with Skills', compute='_compute_applicants_with_skills', store=True)
 
     @api.depends('skill_ids')
     def _compute_employees_with_skills(self):
@@ -22,9 +22,11 @@ class TalentFinder(models.Model):
     @api.depends('skill_ids')
     def _compute_applicants_with_skills(self):
         for talent_finder in self:
+            applicant_ids = []
             skill_ids = talent_finder.skill_ids.ids
             applicants_with_skills = self.env['hr.applicant.skill'].search([('skill_id', 'in', skill_ids)])
-            talent_finder.applicants_skill_ids = [(6, 0, applicants_with_skills.ids)]
+            applicant_ids.extend(applicants_with_skills.mapped('applicant_id').ids)
+            talent_finder.applicants_skill_ids = [(6, 0, applicant_ids)]
 
 
 

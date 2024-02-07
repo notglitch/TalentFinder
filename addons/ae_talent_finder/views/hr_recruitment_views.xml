@@ -55,11 +55,11 @@
               <div>
                 <separator string="Applicant Matches" class="mb-4"/>
                     <field mode="tree" nolabel="1" name="applicants_skill_ids">
-                        <tree>
+                        <!--<tree>
                             <field name="name"/>
                             <field name="job_id"/>
                             <field name="stage_id"/>
-                        </tree>
+                        </tree>-->
                     </field>
               </div>
               </sheet>
