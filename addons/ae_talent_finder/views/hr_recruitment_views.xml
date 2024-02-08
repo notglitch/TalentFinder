@@ -18,6 +18,11 @@
         <field name="arch" type="xml">
             <tree string="Talent Finder History">
                 <field name="name" string="Porpouse"/>
+                <field name="selection_origen"/>
+                <field name="lead_id"/>
+                <field name="project_id"/>
+                <field name="employees_count" string="Employees Founded"/>
+                <field name="applicants_count" string="Applicants Founded"/>
             </tree>
         </field>
     </record>
