@@ -22,6 +22,10 @@ class TalentFinder(models.Model):
         ('project', 'Project'),
         ('recruitment', 'Recruitment'),
     ], string='Search origin', default='recruitment')
+    employees_count = fields.Integer("Employees with Skills", compute='_compute_employees_count',
+                                      store=True)
+    applicants_count = fields.Integer("Applicants with Skills", compute='_compute_applicants_count',
+                                      store=True)
 
     @api.depends('skill_ids')
     def _compute_employees_with_skills(self):
@@ -39,6 +43,15 @@ class TalentFinder(models.Model):
             applicant_ids.extend(applicants_with_skills.mapped('applicant_id').ids)
             talent_finder.applicants_skill_ids = [(6, 0, applicant_ids)]
 
+    @api.depends('employees_skill_ids')
+    def _compute_employees_count(self):
+        for record in self:
+            record.employees_count = len(record.employees_skill_ids)
+
+    @api.depends('applicants_skill_ids')
+    def _compute_applicants_count(self):
+        for record in self:
+            record.applicants_count = len(record.applicants_skill_ids)
 
 
 
