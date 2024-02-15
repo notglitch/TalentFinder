@@ -1,32 +1,13 @@
-[![Build Status](https://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://runbot.odoo.com/runbot)
-[![Tech Doc](https://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/documentation/16.0)
-[![Help](https://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/forum/help-1)
-[![Nightly Builds](https://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://nightly.odoo.com/)
+<h3>About Talent Finder</h3>
+Odoo manages talents from the application of human resources, considering employees and applicants as
+well as the skills and competencies required to fill jobs.
+However, the search for talent to form work teams may be necessary from other flows, even from the beginning of commercial processes. Talent Finder has been designed based on the need that may exist, to know in advance if the company has sufficiently 
+competitive personnel to take on new projects as soon as a business opportunity appears with specific requirements.
+The functionalities of this module must radiate throughout the processes where it can be applied: CRM, Project, Recruitment.
 
-Odoo
-----
+<h3>Main Idea</h3>
+Find the talents whose skills are required with specific level:
 
-Odoo is a suite of web based open source business apps.
-
-The main Odoo Apps include an <a href="https://www.odoo.com/page/crm">Open Source CRM</a>,
-<a href="https://www.odoo.com/app/website">Website Builder</a>,
-<a href="https://www.odoo.com/app/ecommerce">eCommerce</a>,
-<a href="https://www.odoo.com/app/inventory">Warehouse Management</a>,
-<a href="https://www.odoo.com/app/project">Project Management</a>,
-<a href="https://www.odoo.com/app/accounting">Billing &amp; Accounting</a>,
-<a href="https://www.odoo.com/app/point-of-sale-shop">Point of Sale</a>,
-<a href="https://www.odoo.com/app/employees">Human Resources</a>,
-<a href="https://www.odoo.com/app/social-marketing">Marketing</a>,
-<a href="https://www.odoo.com/app/manufacturing">Manufacturing</a>,
-<a href="https://www.odoo.com/">...</a>
-
-Odoo Apps can be used as stand-alone applications, but they also integrate seamlessly so you get
-a full-featured <a href="https://www.odoo.com">Open Source ERP</a> when you install several Apps.
-
-Getting started with Odoo
--------------------------
-
-For a standard installation please follow the <a href="https://www.odoo.com/documentation/16.0/administration/install/install.html">Setup instructions</a>
-from the documentation.
-
-To learn the software, we recommend the <a href="https://www.odoo.com/slides">Odoo eLearning</a>, or <a href="https://www.odoo.com/page/scale-up-business-game">Scale-up</a>, the <a href="https://www.odoo.com/page/scale-up-business-game">business game</a>. Developers can start with <a href="https://www.odoo.com/documentation/16.0/developer/howtos.html">the developer tutorials</a>
+  1. For a potential client, valued as a lead for the company. In this case: Company Employees should be considered Talents.
+  2. For a project that registers very specific requirements for its development, and requires Talents that satisfy these requirements. In this case: Company Employees and Applicants must be considered Talents.
+  3. For a Recruitment process that has a pool of talents and that needs to find people whose skills match the levels requested by the other areas of the company. In this case: Applicants should be considered Talents.
