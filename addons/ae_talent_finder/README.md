@@ -166,6 +166,8 @@ Please feel free to contribute to the functional and technical improvement of ou
 2. [ ] Should a report be generated with those selected?
 3. [ ] Should a round system be established based on: Best Matches, Second Choices and Approximate Matches?
 
-###### Write down your ideas and share them in the space Welcome Suggestions and Questions: [addons/ae_talent_finder/Welcome suggestions and questions.md](addons/ae_talent_finder/Welcome suggestions and questions.md)
+###### Write down your ideas and share them in the space Welcome Suggestions and Questions:
+###### addons/ae_talent_finder/Welcome suggestions and questions.md
+https://github.com/notglitch/TalentFinder/blob/main/addons/ae_talent_finder/Welcome%20suggestions%20and%20questions.md
 
 
