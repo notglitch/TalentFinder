@@ -3,9 +3,10 @@
 
 {
     'name': 'Talent Finder',
-    'version': '1.1',
+    'version': '16.0.1',
     'category': 'Human Resources/Recruitment',
-    'sequence': 90,
+    'author': "Aleph Engineering",
+    'website': "https://aleph.engineering",
     'summary': 'Find the best talents to join your work team',
     'depends': [
         'hr',
