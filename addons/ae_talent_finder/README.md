@@ -1,4 +1,4 @@
-<h3>About Talent Finder</h3>
+### About Talent Finder
 ***
 Odoo manages talents from the application of human resources, considering employees and applicants as
 well as the skills and competencies required to fill jobs.
@@ -6,7 +6,7 @@ However, the search for talent to form work teams may be necessary from other fl
 competitive personnel to take on new projects as soon as a business opportunity appears with specific requirements.
 The functionalities of this module must radiate throughout the processes where it can be applied: CRM, Project, Recruitment.
 
-<h3>Main Idea</h3>
+### Main Idea
 ***
 Find the talents whose skills are required with specific levels:
   1. For a potential client, valued as a lead for the company. In this case: Company Employees should be considered Talents.
@@ -166,6 +166,6 @@ Please feel free to contribute to the functional and technical improvement of ou
 2. [ ] Should a report be generated with those selected?
 3. [ ] Should a round system be established based on: Best Matches, Second Choices and Approximate Matches?
 
-###### Write down your ideas and share them in the space: [Welcome suggestions and questions](/opt/odoo/odoo16/addons/ae_talent_finder/Welcome suggestions and questions.md)
+###### Write down your ideas and share them in the space Welcome Suggestions and Questions: [addons/ae_talent_finder/Welcome suggestions and questions.md](addons/ae_talent_finder/Welcome suggestions and questions.md)
 
 
