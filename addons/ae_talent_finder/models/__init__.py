@@ -1,1 +1,1 @@
-from . import hr_recruitment
+from . import ae_talent_finder
