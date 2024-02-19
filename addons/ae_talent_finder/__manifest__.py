@@ -16,7 +16,7 @@
         'project',
     ],
     'data': [
-	"views/hr_recruitment_views.xml",
+	"views/ae_talent_finder_views.xml",
     "security/ir.model.access.csv",
 
     ],
