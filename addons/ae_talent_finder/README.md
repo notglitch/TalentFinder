@@ -6,6 +6,10 @@ However, the search for talent to form work teams may be necessary from other fl
 competitive personnel to take on new projects as soon as a business opportunity appears with specific requirements.
 The functionalities of this module must radiate throughout the processes where it can be applied: CRM, Project, Recruitment.
 
+
+_This solution, and the solutions derived from Talent Finder, is being developed by **Aleph Engineer Company**_
+*** 
+
 ### Main Idea
 ***
 Find the talents whose skills are required with specific levels:
