@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
 <odoo>
    <data>
+    <menuitem
         name="Talent Finder"
         id="menu_ae_talent_finder_root_0" 
         web_icon="ae_talent_finder,static/description/icon.svg"
         groups="base.group_user" sequence="200"/>
 
-    <menuitem
+<!--    <menuitem
             id="menu_ae_talent_finder_main_0"
             name="Talent"
             parent="menu_ae_talent_finder_root_0"
-            sequence="20" groups="base.group_user"/>
+            sequence="20" groups="base.group_user"/>-->
 
     <record model="ir.ui.view" id="ae_talent_finder_tree">
         <field name="name">Talent Finder History</field>
