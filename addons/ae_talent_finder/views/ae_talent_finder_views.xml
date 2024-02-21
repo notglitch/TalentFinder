@@ -7,12 +7,6 @@
         web_icon="ae_talent_finder,static/description/icon.svg"
         groups="base.group_user" sequence="200"/>
 
-<!--    <menuitem
-            id="menu_ae_talent_finder_main_0"
-            name="Talent"
-            parent="menu_ae_talent_finder_root_0"
-            sequence="20" groups="base.group_user"/>-->
-
     <record model="ir.ui.view" id="ae_talent_finder_tree">
         <field name="name">Talent Finder History</field>
         <field name="model">ae.talent.finder</field>
@@ -83,11 +77,6 @@
                     </div>
                   </div>
                     <field mode="tree" nolabel="1" name="applicants_skill_ids" attrs="{'invisible': [('selection_output', '=', 'employee')]}">
-                        <!--<tree>
-                            <field name="name"/>
-                            <field name="job_id"/>
-                            <field name="stage_id"/>
-                        </tree>-->
                     </field>
               </div>
               </sheet>
@@ -124,19 +113,5 @@
             id="menu_ae_talent_finder_0"
             action="action_ae_talent_finder" groups="base.group_user"
             sequence="20"/>
-
-
-
-        <!--menuitem
-            id="menu_ae_talent_finder_main"
-            name="Talent"
-            parent="hr_recruitment.menu_hr_recruitment_root"
-            sequence="0"/>
-        <menuitem
-            parent="menu_ae_talent_finder_main"
-            name="Talent"
-            id="menu_ae_talent_finder"
-            action="action_ae_talent_finder"/-->
-
     </data>
 </odoo>
