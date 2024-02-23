@@ -14,8 +14,8 @@
         'crm',
     ],
     'data': [
-        "views/crm_lead_skills_views.xml",
         "security/ir.model.access.csv",
+        "views/crm_lead_skills_views.xml",
 
     ],
     'installable': True,
