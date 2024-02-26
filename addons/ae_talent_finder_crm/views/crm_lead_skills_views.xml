@@ -105,26 +105,39 @@
                                 </tree>
                             </field>
                     </div>
-                    <separator string="Employees Qualified" class="mb-4" />
+                    <separator string="Best Matches / Best Matches Rating" class="mb-4" />
                     <button name="button_best_matches" string="Best Matches" type="object"
                             icon="fa-search" class="btn btn-outline-secondary btn-sm" style="float:right; margin-left: 5px;"/>
-                    <button name="assign_weights_to_employees" string="Assign Weights" style="float:right; margin-left: 5px;"
-                            type="object" class="fa fa-star btn btn-outline-secondary btn-sm">
+                    <button name="button_matches_rating" string="Best Matches Rating" style="float:right; margin-left: 5px;"
+                            type="object" icon="fa-star" class="btn btn-outline-secondary btn-sm">
                     </button>
-
                     <separator />
                     <field mode="tree" name="employee_skill_ids" groups="base.group_user" widget="skills_one2many">
-                        <tree editable="false">
+                        <tree editable="top">
                             <field name="skill_type_id" invisible="1"/>
                             <field name="skill_id" />
                             <field name="skill_level_id"/>
-                            <field name="employee_id" options="{'no_create_edit': True}" widget="selection"/>
+                            <field name="employee_id" options="{'no_create_edit': True}" widget="many2one_avatar_user"/>
+                            <field name="job_id"/>
+                            <field name="department_id"/>
                         </tree>
                     </field>
+                    <separator />
+                    <field mode="tree" name="matching_rating" groups="base.group_user" string="Best Matching Rating">
+                        <tree editable="top">
+                            <field name="employee_id" widget="many2one_avatar_user"/>
+                            <field name="job_id"/>
+                            <field name="department_id"/>
+                            <field name="matching_rating" widget="integer"/>
+                            <button name="show_employee_skills" type="object" icon="fa-eye"/>
+                        </tree>
+                    </field>
+
              </page>
             </xpath>
         </field>
     </record>
+
 
    <menuitem
         name="Talent Finder"
